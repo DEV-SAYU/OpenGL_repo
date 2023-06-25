@@ -2,8 +2,12 @@ cmake_minimum_required(VERSION 3.27)
 project(MyProject)
 
 # Set C++ standard to C++11
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+set(WINDOW_NAME "Hello, OpenGL!")
+set(WINDOW_WIDTH 960)
+set(WINDOW_HEIGHT 540) 
 
 # Add the source files
 add_executable(MyProject src/main.cpp)
