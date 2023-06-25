@@ -18,4 +18,10 @@ target_include_directories(${PROJECT_NAME} PUBLIC ${DEP_INCLUDE_DIR})
 target_link_directories(${PROJECT_NAME} PUBLIC ${DEP_LIB_DIR})
 target_link_libraries(${PROJECT_NAME} PUBLIC ${DEP_LIBS})
 
+target_compile_definitions(${PROJECT_NAME} PUBLIC
+    WINDOW_NAME="${WINDOW_NAME}"
+    WINDOW_WIDTH=${WINDOW_WIDTH}
+    WINDOW_HEIGHT=${WINDOW_HEIGHT}
+)
+
 add_dependencies(${PROJECT_NAME} ${DEP_LIST})
